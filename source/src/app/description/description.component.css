@@ -18,6 +18,7 @@ mat-card-content {
   align-content: center;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .images img {

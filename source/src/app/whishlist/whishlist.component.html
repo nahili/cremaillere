@@ -1,22 +1,27 @@
 <mat-expansion-panel>
   <mat-expansion-panel-header>
-    <mat-panel-title>Liste de voeux</mat-panel-title>
+    <mat-panel-title><span class="title">Liste de voeux</span></mat-panel-title>
     <mat-panel-description>Il nous manque encore {{wishesToComplete}} trucs-muchs!</mat-panel-description>
   </mat-expansion-panel-header>
   <p>
     Comme nous venons d'emménager, il nous manque tout un bric-à-brac d'objets
     hétéroclites.
-    Nous comptons sur vos placards et fonds de tiroirs pour compléter notre inventaire d'outillage de maison!
+  </p>
+
+  <p>
+    Nous nous sommes dit que peut-être vous auriez notre bonheur qui traîne inusité dans vos placards et fonds de tiroirs.
+    Alors nous voulons jouer un jeu avec vous et voir si nous arrivons à compléter notre inventaire d'outillage de
+    maison avec ce que vous avez chez vous.
   </p>
 
   <p>Les règles du jeu de la liste de voeux sont donc les suivantes:</p>
 
   <ul>
-    <li>vous n'achetez rien de neuf</li>
-    <li>vous nous donnez seulement ce que vous n'utilisez <b>pas/plus</b></li>
+    <li>vous <b>n'achetez rien</b></li>
+    <li>vous nous donnez <b>seulement</b> ce que vous n'utilisez <b>pas/plus</b></li>
   </ul>
 
-  <p>Si vous avez quelque chose sur cette liste <a href="mailto:bastien.noverraz@gmail.com">dites-le nous</a> et on mettra à jour la liste!</p>
+  <p>Si vous avez quelque chose sur cette liste <a href="mailto:bastien.noverraz@gmail.com">dites-le nous</a> et on la mettra à jour!</p>
 
   <mat-list>
     <mat-list-item *ngFor="let item of wishes">
