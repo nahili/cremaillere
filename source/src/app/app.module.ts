@@ -8,12 +8,14 @@ import {AppMaterialModule} from './app-material.module';
 
 import { TitleComponent } from './title/title.component';
 import { DescriptionComponent } from './description/description.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
