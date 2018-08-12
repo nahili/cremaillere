@@ -1,0 +1,15 @@
+mat-card-content {
+  display: flex;
+}
+
+.text {
+  flex-grow: 2;
+}
+
+.images {
+  flex-grow: 1;
+}
+
+.images img {
+  height: 10em;
+}
