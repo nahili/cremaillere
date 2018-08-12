@@ -3,3 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
 
+body {
+  background-image: url("assets/background/paper-1.jpg");
+  padding: 2em;
+}

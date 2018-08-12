@@ -1,9 +1,14 @@
+mat-card {
+  background-color: rgba(255,255,255,0.7);
+}
+
 mat-card-content {
   display: flex;
 }
 
 .text {
   flex-grow: 2;
+  margin-right: 1em;
 }
 
 .images {
@@ -12,4 +17,16 @@ mat-card-content {
 
 .images img {
   height: 10em;
+  margin: 0.5em;
+  opacity: 1;
+}
+
+.vege {
+  color: #16aa12;
+  font-weight: bold;
+}
+
+:host {
+  display: block;
+  margin-top: 1em;
 }
