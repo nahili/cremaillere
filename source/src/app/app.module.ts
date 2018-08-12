@@ -9,13 +9,15 @@ import {AppMaterialModule} from './app-material.module';
 import { TitleComponent } from './title/title.component';
 import { DescriptionComponent } from './description/description.component';
 import { FooterComponent } from './footer/footer.component';
+import { WhishlistComponent } from './whishlist/whishlist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleComponent,
     DescriptionComponent,
-    FooterComponent
+    FooterComponent,
+    WhishlistComponent
   ],
   imports: [
     BrowserModule,

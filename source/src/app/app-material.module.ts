@@ -4,6 +4,8 @@ import {
   MatButtonModule,
   MatCardModule,
   MatCheckboxModule,
+  MatDividerModule,
+  MatListModule,
   MatSidenavModule,
   MatToolbarModule
 } from '@angular/material';
@@ -14,14 +16,18 @@ import {
     MatCheckboxModule,
     MatCardModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule,
+    MatDividerModule
   ],
   exports: [
     MatButtonModule,
     MatCheckboxModule,
     MatCardModule,
     MatToolbarModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule,
+    MatDividerModule
   ],
 })
 export class AppMaterialModule { }
