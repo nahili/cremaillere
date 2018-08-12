@@ -7,3 +7,15 @@ body {
   background-image: url("assets/background/paper-1.jpg");
   padding: 2em;
 }
+
+a {
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+
+a:visited {
+  font-weight: bold;
+  color: darkred;
+  text-decoration: none;
+}

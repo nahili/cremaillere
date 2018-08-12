@@ -4,21 +4,25 @@ mat-card {
 
 mat-card-content {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .text {
-  flex-grow: 2;
+  flex-grow: 1;
   margin-right: 1em;
 }
 
 .images {
   flex-grow: 1;
+  width: 100px;
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
 }
 
 .images img {
-  height: 10em;
   margin: 0.5em;
-  opacity: 1;
+  height:10em;
 }
 
 .vege {
