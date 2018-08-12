@@ -15,9 +15,14 @@ export class WhishlistComponent implements OnInit {
 
   wishes: Wish[] = WISHES;
 
+  wishesToComplete : number = 0;
+
   constructor() { }
 
   ngOnInit() {
+    for(let w of this.wishes)
+      if (w.status == Status.MISSING)
+        this.wishesToComplete++;
   }
 
 }

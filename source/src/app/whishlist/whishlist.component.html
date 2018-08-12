@@ -1,24 +1,32 @@
-<mat-card>
-  <mat-card-title>Liste de voeux</mat-card-title>
-  <mat-card-content>
-    <p>
-      Comme nous venons d'eménager et que nous ne sommes pas des consumeristes, il nous manque tout un bric-à-brac d'objets
-      hétéroclites. Nous comptons sur vos placards et fonds de tiroirs pour compléter notre inventaire d'outillage de maison.
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>Liste de voeux</mat-panel-title>
+    <mat-panel-description>Il nous manque encore {{wishesToComplete}} trucs-muchs!</mat-panel-description>
+  </mat-expansion-panel-header>
+  <p>
+    Comme nous venons d'emménager, il nous manque tout un bric-à-brac d'objets
+    hétéroclites.
+    Nous comptons sur vos placards et fonds de tiroirs pour compléter notre inventaire d'outillage de maison!
+  </p>
 
-    Les règles du jeu de la liste de voeux sont donc les suivantes:
-    - vous n'achetez rien de neuf
-    - vous nous donnez seulement ce que vous n'utilisez pas/plus
-    </p>
-    <mat-list>
-      <mat-list-item *ngFor="let item of wishes">
-        <div class="item-content">
-          <div class="item-title">{{item.name}}</div>
-          <div class="item-found" *ngIf="item.status==Status.FOUND">Trouvé!</div>
-          <div class="item-found" *ngIf="item.status==Status.MISSING">Pas encore trouvé</div>
-          <div class="item-found" *ngIf="item.status==Status.MAYBE">Peut-être trouvé</div>
-        </div>
-        <mat-divider></mat-divider>
-      </mat-list-item>
-    </mat-list>
-  </mat-card-content>
-</mat-card>
+  <p>Les règles du jeu de la liste de voeux sont donc les suivantes:</p>
+
+  <ul>
+    <li>vous n'achetez rien de neuf</li>
+    <li>vous nous donnez seulement ce que vous n'utilisez <b>pas/plus</b></li>
+  </ul>
+
+  <p>Si vous avez quelque chose sur cette liste <a href="mailto:bastien.noverraz@gmail.com">dites-le nous</a> et on mettra à jour la liste!</p>
+
+  <mat-list>
+    <mat-list-item *ngFor="let item of wishes">
+      <div class="item-content">
+        <div class="item-title">{{item.name}}</div>
+        <div class="item-found" *ngIf="item.status==Status.FOUND">Trouvé!</div>
+        <div class="item-found" *ngIf="item.status==Status.MISSING">Pas encore trouvé</div>
+        <div class="item-found" *ngIf="item.status==Status.MAYBE">Peut-être trouvé</div>
+      </div>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-list>
+</mat-expansion-panel>

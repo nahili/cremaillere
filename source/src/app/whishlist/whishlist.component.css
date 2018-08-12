@@ -1,5 +1,9 @@
-mat-card {
+mat-expansion-panel {
   background-color: rgba(255,255,255,0.7);
+}
+
+mat-expansion-panel:hover {
+  background-color: rgba(255,255,255,0.9);
 }
 
 .item-content {
