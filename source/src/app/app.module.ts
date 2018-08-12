@@ -4,13 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import {AppMaterialModule} from './app-material.module';
+
+import { TitleComponent } from './title/title.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
