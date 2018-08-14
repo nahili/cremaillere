@@ -3,7 +3,7 @@ import {Wish, Status} from './wish';
 
 export const WISHES: Wish[] = [
   { name: 'Grille-pain', status: Status.MISSING },
-  { name: 'Services en métal', status: Status.FOUND },
+  { name: 'Services en métal', status: Status.MAYBE },
   { name: 'Couteaux', status: Status.MAYBE },
   { name: 'Lampes de plafond', status: Status.MISSING },
   { name: 'Miroir pour salle de bain', status: Status.MISSING },

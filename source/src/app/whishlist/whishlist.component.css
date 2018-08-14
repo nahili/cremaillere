@@ -24,3 +24,7 @@ mat-panel-title {
 .title {
   font-size: 120%;
 }
+
+.chip {
+  background-color: chocolate;
+}
