@@ -29,7 +29,7 @@
         <div class="item-title">{{item.name}}</div>
         <div class="item-found" *ngIf="item.status==Status.FOUND">Trouvé!</div>
         <div class="item-found" *ngIf="item.status==Status.MISSING">Pas encore trouvé</div>
-        <div class="item-found" *ngIf="item.status==Status.MAYBE">Peut-être trouvé</div>
+        <div class="item-found" *ngIf="item.status==Status.MAYBE">Partiellement trouvé</div>
       </div>
       <mat-divider></mat-divider>
     </mat-list-item>
