@@ -2,6 +2,13 @@ import {Wish, Status} from './wish';
 
 
 export const WISHES: Wish[] = [
+  { name: 'Livres sur la permaculture', status: Status.MISSING },
+  { name: 'Herbier des plantes et arbres Suisse', status: Status.MISSING },
+  { name: 'Livres sur les champignons (cueillette)', status: Status.MISSING },
+  { name: 'Livres sur les plantes sauvages comestibles', status: Status.MISSING },
+  { name: 'Casse-noix', status: Status.MISSING },
+  { name: 'Bras mixeurs', status: Status.MISSING },
+  { name: 'Four à micro-ondes', status: Status.MISSING },
   { name: 'Grille-pain', status: Status.MISSING },
   { name: 'Services en métal', status: Status.MAYBE },
   { name: 'Couteaux', status: Status.MAYBE },
